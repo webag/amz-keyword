@@ -18,10 +18,6 @@ body {
   color: #4b6373;
   min-width: 1024px;
 }
-h1 {
-  font-weight: 600;
-  font-size: 35px;
-}
 strong,
 b {
   font-weight: 700;
@@ -79,7 +75,6 @@ a {
   top: -5px;
   z-index: 2;
   border-radius: 5px;
-  height: 100px;
   padding: 0 20px;
   background-color: #fff;
   box-shadow: 0 2px 6px 0 rgba(29, 43, 64, 0.1);
@@ -126,12 +121,61 @@ a {
 .input-group .btn:hover {
   background-color: #3ba4eb;
 }
+.input-group .btn:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
 .input-group .btn:focus {
   outline: none;
 }
 .input-group .btn img {
   height: 20px;
   width: 20px;
+}
+.s-row {
+  display: flex;
+}
+.s-row .col {
+  flex: 1;
+}
+.s-row .col--name {
+  flex: 2;
+  flex-shrink: 0;
+}
+.s-header {
+  color: #a1abb2;
+  font-weight: 600;
+}
+.s-header .col {
+  padding: 20px 15px 20px 0;
+}
+.s-header .col a {
+  transition: all 0.3s ease;
+}
+.s-header .col a:hover {
+  color: #4b6373;
+}
+.s-header .col.sorted {
+  color: #4b6373;
+  font-weight: 700;
+}
+.s-products .s-row {
+  border-top: 1px solid #c5cdd6;
+}
+.s-products .col {
+  padding: 10px 15px 10px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.s-products .col--name {
+  font-weight: bold;
+  color: #3290c7;
+}
+.s-products .col--name a {
+  transition: all 0.3s ease;
+}
+.s-products .col--name a:hover {
+  color: #3ba4eb;
 }
 
 /*# sourceMappingURL=main.css.map */
